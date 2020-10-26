@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "name": "Meeting",
+        "category": "Work",
+    },
+    {
+        "id": 2,
+        "name": "Jira",
+        "category": "Work",
+    },
+    {
+        "id": 3,
+        "name": "BofA",
+        "category": "Work",
+    },
+    {
+        "id": 4,
+        "name": "Mobile",
+        "category": "Work",
+    },
+    {
+        "id": 5,
+        "name": "Reporting",
+        "category": "Work",
+    },
+    {
+        "id": 6,
+        "name": "LLevoYo",
+        "category": "Side Project",
+    },
+    {
+        "id": 7,
+        "name": "Time Tracker",
+        "category": "Side Project",
+    },
+    {
+        "id": 8,
+        "name": "ICAO4Pilots",
+        "category": "Side Work",
+    },
+    {
+        "id": 9,
+        "name": "PS4",
+        "category": "Fun",
+    },
+    {
+        "id": 10,
+        "name": "Music",
+        "category": "Fun",
+    },
+    {
+        "id": 11,
+        "name": "Eat",
+        "category": "Health",
+    },
+    {
+        "id": 12,
+        "name": "Rest",
+        "category": "Health",
+    },
+    {
+        "id": 13,
+        "name": "Walk",
+        "category": "Health",
+    },
+]
