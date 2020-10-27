@@ -16,12 +16,11 @@ struct HomeView: View {
                 .foregroundColor(Color("TTMain"))
             NavigationLink(destination: ActivitySelectorView()) {
                 Text("Start new")
-//                Button("Start New", action: {})
             }
             Button("Stop", action: {})
             Spacer()
             HStack() {
-                Text("Activity")
+                Text("Some Activity")
                     .foregroundColor(Color("TTAccent"))
                 Spacer()
                 Text("1:21:22")
