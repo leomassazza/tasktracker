@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C57D3482548514D00F80CFC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C57D3472548514D00F80CFC /* AppState.swift */; };
 		2C6CA8FE2547157B00006739 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CA8FD2547157B00006739 /* HomeView.swift */; };
 		2C6CA91425472F7500006739 /* ActivitySelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CA91325472F7500006739 /* ActivitySelectorView.swift */; };
 		2C6CA91C2547334900006739 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CA91B2547334900006739 /* Activity.swift */; };
 		2C6CA929254734EC00006739 /* activityData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2C6CA928254734EC00006739 /* activityData.json */; settings = {ASSET_TAGS = (New, ); }; };
 		2C6CA930254745AD00006739 /* ActivityItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CA92F254745AD00006739 /* ActivityItemView.swift */; };
 		2C6CA93C25474A0E00006739 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CA93B25474A0E00006739 /* Data.swift */; };
+		2C6F51BA2548C29F00A11D93 /* ElapsedTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F51B92548C29F00A11D93 /* ElapsedTimeManager.swift */; };
 		2C72FD4D25006F48008D1AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72FD4C25006F48008D1AF0 /* AppDelegate.swift */; };
 		2C72FD4F25006F48008D1AF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72FD4E25006F48008D1AF0 /* SceneDelegate.swift */; };
 		2C72FD5125006F48008D1AF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72FD5025006F48008D1AF0 /* ContentView.swift */; };
@@ -91,12 +93,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C57D3472548514D00F80CFC /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		2C6CA8FD2547157B00006739 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2C6CA91325472F7500006739 /* ActivitySelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitySelectorView.swift; sourceTree = "<group>"; };
 		2C6CA91B2547334900006739 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		2C6CA928254734EC00006739 /* activityData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = activityData.json; sourceTree = "<group>"; };
 		2C6CA92F254745AD00006739 /* ActivityItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityItemView.swift; sourceTree = "<group>"; };
 		2C6CA93B25474A0E00006739 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		2C6F51B92548C29F00A11D93 /* ElapsedTimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeManager.swift; sourceTree = "<group>"; };
 		2C72FD4925006F48008D1AF0 /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C72FD4C25006F48008D1AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C72FD4E25006F48008D1AF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 			children = (
 				2C6CA91B2547334900006739 /* Activity.swift */,
 				2C6CA93B25474A0E00006739 /* Data.swift */,
+				2C57D3472548514D00F80CFC /* AppState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,6 +190,14 @@
 				2C6CA928254734EC00006739 /* activityData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2C6F51B82548C25700A11D93 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2C6F51B92548C29F00A11D93 /* ElapsedTimeManager.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		2C72FD4025006F48008D1AF0 = {
@@ -264,6 +277,7 @@
 		2C72FD8625006F54008D1AF0 /* TaskTracker WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				2C6F51B82548C25700A11D93 /* Helpers */,
 				2C6CA927254734A400006739 /* Resources */,
 				2C6CA91A254732F100006739 /* Models */,
 				2C6CA8FC254714F400006739 /* Views */,
@@ -513,6 +527,8 @@
 				2C72FD8A25006F54008D1AF0 /* HostingController.swift in Sources */,
 				2C6CA93C25474A0E00006739 /* Data.swift in Sources */,
 				2C6CA8FE2547157B00006739 /* HomeView.swift in Sources */,
+				2C6F51BA2548C29F00A11D93 /* ElapsedTimeManager.swift in Sources */,
+				2C57D3482548514D00F80CFC /* AppState.swift in Sources */,
 				2C6CA91425472F7500006739 /* ActivitySelectorView.swift in Sources */,
 				2C6CA930254745AD00006739 /* ActivityItemView.swift in Sources */,
 				2C72FD8E25006F54008D1AF0 /* NotificationController.swift in Sources */,
@@ -689,6 +705,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskTracker WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = J256SJMZ25;
 				ENABLE_PREVIEWS = YES;
@@ -714,6 +731,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskTracker WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = J256SJMZ25;
 				ENABLE_PREVIEWS = YES;
@@ -740,6 +758,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = J256SJMZ25;
 				IBSC_MODULE = TaskTracker_WatchKit_Extension;
 				INFOPLIST_FILE = "TaskTracker WatchKit App/Info.plist";
@@ -760,6 +779,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = J256SJMZ25;
 				IBSC_MODULE = TaskTracker_WatchKit_Extension;
 				INFOPLIST_FILE = "TaskTracker WatchKit App/Info.plist";
@@ -779,6 +799,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = J256SJMZ25;
 				ENABLE_PREVIEWS = YES;
@@ -800,6 +821,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = J256SJMZ25;
 				ENABLE_PREVIEWS = YES;

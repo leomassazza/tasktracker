@@ -9,22 +9,33 @@
 import SwiftUI
 
 struct HomeView: View {
+    @ObservedObject var appState: AppState
+    @ObservedObject private var elapsedTimeManager = ElapsedTimeManager(intervalSeconds: 1)
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("Task Tracker")
                 .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
                 .foregroundColor(Color("TTMain"))
-            NavigationLink(destination: ActivitySelectorView()) {
-                Text("Start new")
+            NavigationLink(destination: ActivitySelectorView(appState: appState)) {
+                Text(appState.activities[appState.activity].name)
             }
-            Button("Stop", action: {})
+            Button(appState.running ? "Stop" : "Start",action: {
+                appState.running =  !appState.running
+                if (appState.running) {
+                    elapsedTimeManager.start()
+                } else {
+                    elapsedTimeManager.stop()
+                }
+                
+            })
             Spacer()
             HStack() {
-                Text("Some Activity")
-                    .foregroundColor(Color("TTAccent"))
+                Text("Current Session")
+                    .foregroundColor(Color(appState.running ? "TTAccent" : "TTShadow"))
                 Spacer()
-                Text("1:21:22")
-                    .foregroundColor(Color("TTAccent"))
+                Text(elapsedTimeManager.elapsedTime)
+                    .foregroundColor(Color(appState.running ? "TTAccent" : "TTShadow"))
             }
         }
     }
@@ -32,6 +43,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(appState: .init())
     }
 }

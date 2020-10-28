@@ -1,5 +1,10 @@
 [
     {
+        "id": 0,
+        "name": "Idle",
+        "category": "Idle",
+    },
+    {
         "id": 1,
         "name": "Meeting",
         "category": "Work",
@@ -11,7 +16,7 @@
     },
     {
         "id": 3,
-        "name": "BofA",
+        "name": "Releases",
         "category": "Work",
     },
     {
@@ -31,17 +36,17 @@
     },
     {
         "id": 7,
-        "name": "Time Tracker",
+        "name": "Time Tracker :)",
         "category": "Side Project",
     },
     {
         "id": 8,
-        "name": "ICAO4Pilots",
+        "name": "i4p",
         "category": "Side Work",
     },
     {
         "id": 9,
-        "name": "PS4",
+        "name": "PlayStation",
         "category": "Fun",
     },
     {
@@ -51,17 +56,22 @@
     },
     {
         "id": 11,
+        "name": "TV",
+        "category": "Fun",
+    },
+    {
+        "id": 12,
         "name": "Eat",
         "category": "Health",
     },
     {
-        "id": 12,
+        "id": 13,
         "name": "Rest",
         "category": "Health",
     },
     {
-        "id": 13,
+        "id": 14,
         "name": "Walk",
         "category": "Health",
-    },
+    }
 ]

@@ -9,17 +9,26 @@
 import SwiftUI
 
 struct ActivitySelectorView: View {
-    @State private var selectedActivity = 0
+    @ObservedObject var appState: AppState
+//    @State private var currentActivity = 0
+    
     var body: some View {
         VStack(alignment: .leading) {
-            Text("New Task")
+            Text("Tasks")
                 .font(/*@START_MENU_TOKEN@*/.headline/*@END_MENU_TOKEN@*/)
                 .foregroundColor(Color("TTMain"))
-            List(activityData) {activity in
-                ActivityItemView(activity: activity)
+            
+            Picker(selection: self.$appState.activity, label: Text("Tasks")) {
+                ForEach(0 ..< appState.activities.count) {item in
+                    ActivityItemView(activity: appState.activities[item])
+                }
             }
+//            List(activityData) {activity in
+//                ActivityItemView(activity: activity)
+//            }
+            
             Spacer()
-            Text("Selected Activity: \(activityData[(selectedActivity<=0) ? 0:selectedActivity-1].name)")
+            Text("Selected Activity: \(appState.activities[appState.activity].name)")
                 .font(.footnote)
                 .foregroundColor(Color("TTShadow"))
             
@@ -29,6 +38,6 @@ struct ActivitySelectorView: View {
 
 struct ActivitySelectorView_Previews: PreviewProvider {
     static var previews: some View {
-        ActivitySelectorView()
+        ActivitySelectorView(appState: .init())
     }
 }

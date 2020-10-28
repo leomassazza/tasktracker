@@ -14,10 +14,16 @@ struct Activity: Hashable, Codable, Identifiable {
     var category: Category
     
     enum Category: String, CaseIterable, Codable, Hashable {
+        case idle = "Idle"
         case work = "Work"
         case sideProject = "Side Project"
         case sideWork = "Side Work"
         case fun = "Fun"
         case health = "Health"
     }
+}
+
+class ActivityObservable: ObservableObject {
+    @Published var activity: Activity
+    init() {activity = activityData[0]}    
 }

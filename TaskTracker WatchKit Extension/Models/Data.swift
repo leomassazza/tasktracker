@@ -8,7 +8,6 @@
 
 import UIKit
 import SwiftUI
-import CoreLocation
 
 let activityData: [Activity] = load("activityData.json")
 

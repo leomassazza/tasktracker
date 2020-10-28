@@ -12,9 +12,9 @@ struct ActivityItemView: View {
     var activity: Activity
     
     var body: some View {
-        VStack(alignment: .leading) {
+        HStack() {
             Text(activity.name)
-            Text(activity.category.rawValue)
+            Text("(\(activity.category.rawValue))")
                 .font(.footnote)
                 .foregroundColor(Color("TTShadow"))
         }

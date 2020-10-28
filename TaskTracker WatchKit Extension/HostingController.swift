@@ -11,7 +11,8 @@ import Foundation
 import SwiftUI
 
 class HostingController: WKHostingController<HomeView> {
+    var appState = AppState()
     override var body: HomeView {
-        return HomeView()
+        return HomeView(appState: .init())
     }
 }
