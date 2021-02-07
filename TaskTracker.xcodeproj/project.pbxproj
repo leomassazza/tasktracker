@@ -15,6 +15,10 @@
 		2C6CA930254745AD00006739 /* ActivityItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CA92F254745AD00006739 /* ActivityItemView.swift */; };
 		2C6CA93C25474A0E00006739 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CA93B25474A0E00006739 /* Data.swift */; };
 		2C6F51BA2548C29F00A11D93 /* ElapsedTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F51B92548C29F00A11D93 /* ElapsedTimeManager.swift */; };
+		2C6F522D254A2C9A00A11D93 /* PageTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F522C254A2C9A00A11D93 /* PageTemplateView.swift */; };
+		2C6F5277254A4A6700A11D93 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F5276254A4A6700A11D93 /* PageView.swift */; };
+		2C6F527E254A4B2D00A11D93 /* SwipperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F527D254A4B2D00A11D93 /* SwipperView.swift */; };
+		2C6F52A8254A5A7400A11D93 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F52A7254A5A7400A11D93 /* HostingController.swift */; };
 		2C72FD4D25006F48008D1AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72FD4C25006F48008D1AF0 /* AppDelegate.swift */; };
 		2C72FD4F25006F48008D1AF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72FD4E25006F48008D1AF0 /* SceneDelegate.swift */; };
 		2C72FD5125006F48008D1AF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C72FD5025006F48008D1AF0 /* ContentView.swift */; };
@@ -101,6 +105,10 @@
 		2C6CA92F254745AD00006739 /* ActivityItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityItemView.swift; sourceTree = "<group>"; };
 		2C6CA93B25474A0E00006739 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		2C6F51B92548C29F00A11D93 /* ElapsedTimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeManager.swift; sourceTree = "<group>"; };
+		2C6F522C254A2C9A00A11D93 /* PageTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTemplateView.swift; sourceTree = "<group>"; };
+		2C6F5276254A4A6700A11D93 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		2C6F527D254A4B2D00A11D93 /* SwipperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipperView.swift; sourceTree = "<group>"; };
+		2C6F52A7254A5A7400A11D93 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		2C72FD4925006F48008D1AF0 /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C72FD4C25006F48008D1AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C72FD4E25006F48008D1AF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +140,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18530ECCFAEA56768BDC2E2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C72FD4625006F48008D1AF0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,6 +215,24 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		2C6F522A254A2C4700A11D93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C6F522B254A2C5200A11D93 /* Onboarding */,
+				2C6F5276254A4A6700A11D93 /* PageView.swift */,
+				2C6F527D254A4B2D00A11D93 /* SwipperView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C6F522B254A2C5200A11D93 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2C6F522C254A2C9A00A11D93 /* PageTemplateView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		2C72FD4025006F48008D1AF0 = {
 			isa = PBXGroup;
 			children = (
@@ -227,8 +260,10 @@
 		2C72FD4B25006F48008D1AF0 /* TaskTracker */ = {
 			isa = PBXGroup;
 			children = (
+				2C6F522A254A2C4700A11D93 /* Views */,
 				2C72FD4C25006F48008D1AF0 /* AppDelegate.swift */,
 				2C72FD4E25006F48008D1AF0 /* SceneDelegate.swift */,
+				2C6F52A7254A5A7400A11D93 /* HostingController.swift */,
 				2C72FD5025006F48008D1AF0 /* ContentView.swift */,
 				2C72FD5225006F52008D1AF0 /* Assets.xcassets */,
 				2C72FD5725006F52008D1AF0 /* LaunchScreen.storyboard */,
@@ -365,6 +400,7 @@
 			buildPhases = (
 				2C72FD7125006F52008D1AF0 /* Resources */,
 				2C72FD9F25006F55008D1AF0 /* Embed App Extensions */,
+				18530ECCFAEA56768BDC2E2C /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -498,7 +534,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C6F5277254A4A6700A11D93 /* PageView.swift in Sources */,
 				2C72FD4D25006F48008D1AF0 /* AppDelegate.swift in Sources */,
+				2C6F522D254A2C9A00A11D93 /* PageTemplateView.swift in Sources */,
+				2C6F527E254A4B2D00A11D93 /* SwipperView.swift in Sources */,
+				2C6F52A8254A5A7400A11D93 /* HostingController.swift in Sources */,
 				2C72FD4F25006F48008D1AF0 /* SceneDelegate.swift in Sources */,
 				2C72FD5125006F48008D1AF0 /* ContentView.swift in Sources */,
 			);
@@ -705,7 +745,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskTracker WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = J256SJMZ25;
 				ENABLE_PREVIEWS = YES;
@@ -731,7 +771,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskTracker WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = J256SJMZ25;
 				ENABLE_PREVIEWS = YES;
@@ -758,7 +798,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = J256SJMZ25;
 				IBSC_MODULE = TaskTracker_WatchKit_Extension;
 				INFOPLIST_FILE = "TaskTracker WatchKit App/Info.plist";
@@ -779,7 +819,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = J256SJMZ25;
 				IBSC_MODULE = TaskTracker_WatchKit_Extension;
 				INFOPLIST_FILE = "TaskTracker WatchKit App/Info.plist";
@@ -799,7 +839,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = J256SJMZ25;
 				ENABLE_PREVIEWS = YES;
@@ -821,7 +861,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"TaskTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = J256SJMZ25;
 				ENABLE_PREVIEWS = YES;
